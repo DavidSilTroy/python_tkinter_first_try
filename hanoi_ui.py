@@ -45,14 +45,7 @@ class HanoiTowers:
             print(f' soy {disks}')
             for disk in disks:
                 disk.destroy()
-
-        try:
-            number = int(number_of_disks)
-            self.numberOfDisk = number_of_disks
-            self.create_poles()
-        except ValueError:
-            print("Only numbers pleaseee!!")
-            
+                
         self.towers={
             "A": [],
             "B": [],
